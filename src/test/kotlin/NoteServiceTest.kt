@@ -38,7 +38,7 @@ class NoteServiceTest {
     }
 
     @Test(expected = NoteNotFoundException::class)
-    fun createComment_exception_notfound() {
+    fun createComment_exception_found() {
         CommentService.clear()
         NoteService.clear()
         val noteId1 = NoteService.add("new Note #1", "Content #1", 1)
